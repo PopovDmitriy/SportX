@@ -4,7 +4,7 @@ html {
 }
 
 .header {
-    max-width: 2000px;
+    width: 2000px;
     background-image: url(img/header_bg.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -43,7 +43,7 @@ html {
 }
 
 .main__container {
-    max-width: 2000px;
+    width: 2000px;
     margin: 0 auto;
     background-image: url(img/main_bg.png);
     background-repeat: no-repeat;
