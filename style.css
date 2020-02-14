@@ -281,7 +281,7 @@ html {
 
 .feature {
     width: 2000px;
-    background: url(img/bg1.png);
+    background: url(img/bg1.png) no-repeat;
     background-size: 100% 100%;
     margin: 0 auto;
 }
@@ -308,10 +308,32 @@ html {
 
 .feature__img {
     width: 77%;
-    position: relative;
         top: 75px;
 }
 
 .feature__img img {
     width: 100%;
 }
+
+.new-feature {
+    background: url(img/bg2.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.new-feature .container {
+    padding-bottom: 10px;
+}
+
+.new-feature h2 {
+    color: #fff;
+    padding-top: 200px;
+}
+
+.new-feature .feature__img {
+    width: auto;
+    position: initial;
+    padding-top: 95px;
+}
+
+/* ----------------------------------------- */
+
