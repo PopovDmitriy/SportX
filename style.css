@@ -203,6 +203,7 @@ html {
 .products {
     background-color: #dde6e8;
     width: 2000px;
+    margin: 0 auto;
 }
 
 .products .container {
@@ -272,7 +273,9 @@ html {
 /* ------------------------------------ */
 
 .feature {
+    width: 2000px;
     background-color: ;
+    margin: 0 auto;
 }
 
 .feature h2 {
