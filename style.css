@@ -54,7 +54,7 @@ html {
     text-decoration: none;
     color: #fff;
 }
-
+/* --------------------------------------------------------- */
 .main__container {
     width: 2000px;
     margin: 0 auto;
@@ -72,45 +72,52 @@ html {
     margin: 0 auto;
 }
 
-.banner__description {
+.banner__description,
+.feature__description {
     padding: 60px 10px 0;
     width: 40.3%
 }
 
-.banner .container {
+.banner .container,
+.feature .container {
     padding: 180px 10px 110px;
     display: flex;
     justify-content: space-between;
 }
 
-.banner h2 {
+.banner h2,
+.feature h2 {
     font-size: 4.0625rem;
     font-weight: 700;
     padding: 0 0 40px;
     text-transform: uppercase;
 }
 
-.banner p {
+.banner p,
+.feature p {
     text-transform: uppercase;
     padding-bottom: 44px;
-    font-size: 1rem;
     font-weight: 300;
 }
 
-.banner a {
+.banner a,
+.feature a {
     padding: 20px 52px;
     color: rgb(97, 240, 61);
     text-decoration: none;
     border: 1px solid rgb(245, 241, 16);
     display: inline-block;
+    font-size: 1.25rem;
 }
 
-.banner__img {
+.banner__img,
+.feature__img {
     width: 44.3%;
     position: relative;
 }
 
-.banner__img img {
+.banner__img img,
+.fature__img img {
     width: 100%;    
     margin: auto;
     object-fit: cover;
@@ -118,7 +125,7 @@ html {
         top: 0;
         bottom: 0;
 }
-
+/* --------------------------------------------------- */
 .services {
     z-index: 10;
     padding: 97px 0 0;
@@ -192,14 +199,14 @@ html {
 .services .yellow {
     color: #f8de01;
 }
-
+/*----------------------------------------------- */
 .products {
     background-color: #dde6e8;
     width: 2000px;
 }
 
 .products .container {
-    padding-top: 120px;
+    padding: 120px 0 50px;
 }
 
 .products h2 {
@@ -216,3 +223,64 @@ html {
     text-align: center;
 }
 
+.products__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 20px;
+}
+
+.products__item {
+    width: 32%;
+    background-color: #fff;
+}
+
+.products__container {
+    padding: 13px;
+    margin: 0 auto;
+}
+
+.products img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.products__description {
+    padding: 20px 13px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.125rem;
+}
+
+.products__name h4 {
+    font-weight: 300;
+}
+
+.products__price {
+    display: flex;
+}
+
+.products__price p {
+    padding: 0;
+    font-weight: 700;
+}
+
+.products__price::before {
+    content: '$'
+}
+
+/* ------------------------------------ */
+
+.feature {
+    background-color: ;
+}
+
+.feature h2 {
+    font-size: 2.65rem;
+}
+
+.feature a {
+    color: #000;
+    border-color: #000;
+    font-weight: 700;
+}
