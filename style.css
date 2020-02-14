@@ -115,15 +115,16 @@ html {
 .services .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .services__item {
     background: url(img/first-item.png) no-repeat;
     background-size: cover;
     background-position: center right;
-    padding: 52px 40px;
-    margin: 0.5%;
-    width: 48.4%;
+    padding: 20px 40px;
+    margin-bottom: 5.5%;
+    width: 40%;
 }
 
 .services__item:nth-child(2) {
