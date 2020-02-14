@@ -274,7 +274,8 @@ html {
 
 .feature {
     width: 2000px;
-    background-color: ;
+    background: url(img/bg1.png);
+    background-size: 100% 100%;
     margin: 0 auto;
 }
 
