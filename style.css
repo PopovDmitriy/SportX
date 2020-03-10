@@ -1,11 +1,22 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html {
     font-family: 'Lemonada', cursive;
-    font-size: 16px;
+    font-size: 100%;
+}
+
+.visually-hidden { 
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
 }
 
 a {
@@ -14,24 +25,23 @@ a {
 }
 
 .header {
-    width: 2000px;
-    background-image: url(img/header_bg.png);
-    background-repeat: no-repeat;
+    background: url(img/header_bg.png) no-repeat;
     background-size: 100% 100%;
     border: 1px dotted rgb(255, 251, 2);
     margin: 0 auto;
 }
 
 .header__container {
-    width: 66%;
-    margin: 0 auto;
-
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;    
+    align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 30px 0 50px;
+    
 }
 
 .header__logo {
-    padding: 30px 0 51px;
     width: 97px;
 }
 
@@ -41,18 +51,20 @@ a {
 }
 
 .header__nav {
-    width: 63.4%;
-    padding: 45px 0 52px;
     text-transform: uppercase;
     font-size: 1.0625rem;
+    flex: 0 1 100%;
 }
 
 .header__list {
     display: flex;
-    justify-content: space-around;
 }
 
-.header__list li,
+.header__list li {
+    list-style-type: none;
+    margin-left: 3%;
+}
+
 .footer li {
     list-style-type: none;
 }
@@ -60,13 +72,16 @@ a {
 .header__list a {
     color: #fff;
 }
+
+.header__toggler {
+    display: none;       
+}
 /* --------------------------------------------------------- */
-.main__container,
+.main,
 .feature,
 .products,
 .newsletter,
 .footer {
-    width: 2000px;
     margin: 0 auto;
     background: url(img/main_bg.png) no-repeat;
     background-size: 100% 100%;
@@ -151,7 +166,7 @@ a {
 .services__item {
     padding: 20px 40px;
     margin-bottom: 5.5%;
-    width: 40%;
+    flex: 0 1 47%;
 }
 
 .services__item:nth-child(1) {
@@ -438,4 +453,24 @@ a {
 .footer__bot span {
     color: #f8de01;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .header__nav {
+        display: none;
+    }
+
+    .header__toggler {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: tomato;
+    }
+
+    .header__toggler,
+    .header__toggler::before,
+    .header__toggler::after {
+
+    }
 }

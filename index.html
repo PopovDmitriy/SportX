@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,12 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lemonada:400,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header class="header"> 
+    <header class="header js-header">
         <div class="header__container">
             <div class="header__logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
-            <nav class="header__nav">
+            <nav class="header__nav" data-nav>
                 <ul class="header__list">
                     <li class="header__item"><a href="#">home</a></li>
                     <li class="header__item"><a href="#">company</a></li>
@@ -22,77 +24,79 @@
                     <li class="header__item"><a href="#">buy now</a></li>
                 </ul>
             </nav>
-        </div>       
+            <button class="header__toggler" data-toggler><span class="visually-hidden">Open Menu</span></button>
+        </div>
     </header>
+
     <main class="main">
-        <div class="main__container">
-            <section class="banner">
-                <div class="container">
-                    <div class="banner__description">
-                        <h2>boost your power now</h2>
-                        <p>Lorem ipsum dolor sit amet 
-                            consectetur adipisicing elit. 
-                            Expedita itaque earum possimus odit 
-                            quae amet, hic, vitae reprehenderit, 
-                            voluptas ullam fugit culpa suscipit porro? 
-                            Aperiam, eveniet? Debitis voluptas 
-                            sapiente facilis.</p>
-                            <a href="#">Click Here</a>
-                    </div>
-                    <div class="banner__img">
-                        <img src="img/race.png" alt="photo of the race">
-                    </div>
-                </div>    
-            </section>
-            <section class="services">
-                <div class="container">
-                    <div class="services__item">
-                        <div class="services__container first">
-                            <h3>Lorem ipsum dol sit samet.</h3>
-                            <p>Lorem ipsum dolor sit amet 
-                            consectetur adipisicing elit. 
-                            </p>
-                            <a href="#" class="yellow">More</a>
-                        </div>
-                    </div>
-                    <div class="services__item">
-                        <div class="services__container second">
-                            <h3>Lorem ipsum dol sit samet.</h3>
-                            <p>Lorem ipsum dolor sit amet 
-                            consectetur adipisicing elit. 
-                            </p>
-                            <a href="#">More</a>
-                        </div>
-                    </div>
-                    <div class="services__item">
-                        <div class="services__container third">
-                            <h3>Lorem ipsum dol sit samet.</h3>
-                            <p>Lorem ipsum dolor sit amet 
-                            consectetur adipisicing elit. 
-                            </p>
-                            <a href="#">More</a>
-                        </div>
-                    </div>
-                    <div class="services__item">
-                        <div class="services__container fourth">
-                            <h3>Lorem ipsum dol sit samet.</h3>
-                            <p>Lorem ipsum dolor sit amet 
-                            consectetur adipisicing elit. 
-                            </p>
-                            <a href="#" class="yellow">More</a>
-                        </div>
+        <section class="banner">
+            <div class="container">
+                <div class="banner__description">
+                    <h2>boost your power now</h2>
+                    <p>Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Expedita itaque earum possimus odit
+                        quae amet, hic, vitae reprehenderit,
+                        voluptas ullam fugit culpa suscipit porro?
+                        Aperiam, eveniet? Debitis voluptas
+                        sapiente facilis.
+                    </p>
+                    <a href="#">Click Here</a>
+                </div>
+                <div class="banner__img">
+                    <img src="img/race.png" alt="photo of the race">
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="services__item">
+                    <div class="services__container first">
+                        <h3>Lorem ipsum dol sit samet.</h3>
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                        </p>
+                        <a href="#" class="yellow">More</a>
                     </div>
                 </div>
-            </section>
-        </div>
+                <div class="services__item">
+                    <div class="services__container second">
+                        <h3>Lorem ipsum dol sit samet.</h3>
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                        </p>
+                        <a href="#">More</a>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__container third">
+                        <h3>Lorem ipsum dol sit samet.</h3>
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                        </p>
+                        <a href="#">More</a>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__container fourth">
+                        <h3>Lorem ipsum dol sit samet.</h3>
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                        </p>
+                        <a href="#" class="yellow">More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="products">
             <div class="container">
                 <h2>explore the newest products</h2>
-                <p>Lorem ipsum dolor sit, 
-                    amet consectetur adipisicing elit. 
-                    Et, quibusdam pariatur odit nisi 
-                    minus placeat tenetur quam ea similique 
-                    quo maiores excepturi id 
+                <p>Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit.
+                    Et, quibusdam pariatur odit nisi
+                    minus placeat tenetur quam ea similique
+                    quo maiores excepturi id
                     commodi, error, culpa beatae consectetur tempore iure.
                 </p>
                 <div class="products__wrapper">
@@ -109,7 +113,7 @@
                                     <p>27.00</p>
                                 </div>
                             </div>
-                        </div>    
+                        </div>
                     </div>
                     <div class="products__item">
                         <div class="products__container">
@@ -138,19 +142,20 @@
                                 <div class="products__price">
                                     <p>27.00</p>
                                 </div>
-                            </div>                           
+                            </div>
                         </div>
                     </div>
-                </div>    
-             </div>
+                </div>
+            </div>
         </section>
+
         <section class="feature">
             <div class="container">
                 <div class="feature__description">
                     <h2>bring your performance to higher level </h2>
-                    <p>Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit. 
-                        Expedita itaque earum possimus odit 
+                    <p>Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Expedita itaque earum possimus odit
                         quae.
                     </p>
                     <a href="#">Know</a>
@@ -160,6 +165,7 @@
                 </div>
             </div>
         </section>
+
         <section class="feature new-feature">
             <div class="container">
                 <div class="feature__img">
@@ -167,41 +173,43 @@
                 </div>
                 <div class="feature__description">
                     <h2>bring your performance to higher level </h2>
-                    <p>Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit. 
-                        Expedita itaque earum possimus odit 
+                    <p>Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Expedita itaque earum possimus odit
                         quae.
                     </p>
                     <a href="#">Know</a>
                 </div>
             </div>
         </section>
+
         <section class="newsletter">
             <div class="container">
                 <div class="newsletter__discount">
                     <h2>Sign up to our newsletter</h2p>
-                    <p>& get a 10% off voucher</p>
+                        <p>& get a 10% off voucher</p>
                 </div>
                 <form action="" class="newsletter__form">
                     <input class="mail" type="text" placeholder="Enter Your Email">
-                    <input type="submit" class="submit">
+                    <button class="submit">Submit</button>
                 </form>
             </div>
-        </section>               
+        </section>
     </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer__leftpart">
                 <div class="footer__logo">
                     <a href="#"><img src="img/logo.png" alt="logo"></a>
                 </div>
-                <p>Magento provides different 
-                    payment methods in order to 
-                    allow you to accept payments 
-                    using different payment processors 
-                    like Pay...Magento provides 
-                    different payment nts using 
-                    different payment processors 
+                <p>Magento provides different
+                    payment methods in order to
+                    allow you to accept payments
+                    using different payment processors
+                    like Pay...Magento provides
+                    different payment nts using
+                    different payment processors
                     like Pay...</p>
             </div>
             <div class="footer__rightpart">
@@ -239,9 +247,13 @@
                 </ul>
             </div>
         </div>
+        
         <div class="footer__bot">
             <p>Copyright © 2019 by <span>psd in ua</span> All Rights Reserved</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
