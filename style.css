@@ -9,14 +9,16 @@ html {
     font-size: 100%;
 }
 
-.visually-hidden { 
+.visually-hidden {
     position: absolute !important;
-    height: 1px; 
+    height: 1px;
     width: 1px;
     overflow: hidden;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap; /* added line */
+    white-space: nowrap;
+    /* added line */
 }
 
 a {
@@ -34,20 +36,22 @@ img {
     background-size: 100% 100%;
     border: 1px dotted rgb(255, 251, 2);
     margin: 0 auto;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .header__container {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
     align-items: center;
     max-width: 1170px;
     margin: 0 auto;
-    padding: 30px 25px 50px;
-    
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 .header__logo {
-    flex: 1 1 50%;
+    flex: 1 1 97px;
 }
 
 .header__nav {
@@ -58,6 +62,8 @@ img {
 
 .header__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .header__list li {
@@ -74,16 +80,19 @@ img {
 }
 
 .header__toggler {
-    display: none;       
+    display: none;
 }
+
+
 /* --------------------------------------------------------- */
+
 .main,
 .feature,
 .products,
 .newsletter,
 .footer {
     margin: 0 auto;
-    background: url(img/main_bg.png) no-repeat;
+    background: #1c1c1c url(img/main_bg.png) no-repeat;
     background-size: 100% 100%;
 }
 
@@ -93,6 +102,8 @@ img {
 
 .container {
     max-width: 1200px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
@@ -101,6 +112,11 @@ img {
 .feature__description {
     padding: 60px 10px 0;
     flex: 1 0 40%;
+}
+
+.banner .container {
+    padding-left: 13%;
+    padding-right: 13%;
 }
 
 .banner .container,
@@ -144,15 +160,18 @@ img {
     position: relative;
 }
 
-.banner__img img{
-    width: 100%;    
+.banner__img img {
+    width: 100%;
     margin: auto;
     object-fit: cover;
     position: absolute;
-        top: 0;
-        bottom: 0;
+    top: 0;
+    bottom: 0;
 }
+
+
 /* --------------------------------------------------- */
+
 .services {
     padding: 97px 0 0;
     color: #fff;
@@ -171,35 +190,33 @@ img {
 }
 
 .services__item:nth-child(1) {
-    background: url(img/first-item.png) no-repeat;
+    background: #1c1c1c url(img/first-item.png) no-repeat;
     background-size: cover;
     background-position: center right;
 }
 
 .services__item:nth-child(2) {
-    background: url(img/second-item.png) no-repeat;
+    background: #1c1c1c url(img/second-item.png) no-repeat;
     background-size: cover;
     background-position: center right;
-
     color: #000;
 }
 
 .services__item:nth-child(3) {
-    background: url(img/third-item.png) no-repeat;
+    background: #1c1c1c url(img/third-item.png) no-repeat;
     background-size: cover;
     background-position: center right;
-
     color: #000;
 }
 
 .services__item:nth-child(4) {
-    background: url(img/fourth-item.png) no-repeat;
+    background: #1c1c1c url(img/fourth-item.png) no-repeat;
     background-size: cover;
     background-position: center right;
 }
 
 .services__container {
-   width: 50%;
+    width: 50%;
 }
 
 .services h3 {
@@ -225,19 +242,22 @@ img {
 .services .yellow {
     color: #f8de01;
 }
+
+
 /*----------------------------------------------- */
+
 .products {
     background: #dde6e8;
 }
 
 .products .container {
-    padding: 120px 0 50px;
+    padding-top: 120px;
+    padding-bottom: 50px;
 }
 
 .products h2 {
     font-size: 2.65rem;
     text-align: center;
-
     padding: 10px 0 22px;
 }
 
@@ -251,11 +271,12 @@ img {
     display: flex;
     justify-content: space-between;
     padding: 30px 0 20px;
+    flex-wrap: wrap;
 }
 
 .products__item {
-    width: 32%;
     background-color: #fff;
+    flex: 0 1 32%;
 }
 
 .products__container {
@@ -294,6 +315,7 @@ img {
     content: '$'
 }
 
+
 /* ------------------------------------ */
 
 .feature {
@@ -324,7 +346,9 @@ img {
 
 .feature__img {
     width: 77%;
-        top: 75px;
+    top: 75px;
+    display: flex;
+    align-items: center;
 }
 
 .feature__img img {
@@ -351,6 +375,7 @@ img {
     padding-top: 95px;
 }
 
+
 /* ----------------------------------------- */
 
 .newsletter {
@@ -362,12 +387,15 @@ img {
 .newsletter .container {
     display: flex;
     justify-content: space-between;
-    padding: 272px 0 240px;
+    flex-wrap: wrap;
+    padding-top: 240px;
+    padding-bottom: 240px;
 }
 
 .newsletter__discount {
-    width: 50%;
     font-size: 1.456rem;
+    flex: 0 1 50%;
+    padding-right: 18px;
 }
 
 .newsletter__discount p {
@@ -376,9 +404,10 @@ img {
 }
 
 .newsletter__form {
-    width: 50%;
     display: flex;
     padding-top: 30px;
+    padding-left: 18px;
+    flex: 0 1 50%;
 }
 
 .mail {
@@ -386,6 +415,7 @@ img {
     height: 52px;
     background: inherit;
     border: 1px solid #fff;
+    color: #fff;
     padding-left: 10px;
     font-size: 1rem;
 }
@@ -400,6 +430,7 @@ img {
     font-weight: 700;
 }
 
+
 /* ------------------------------------------- */
 
 .footer {
@@ -413,16 +444,18 @@ img {
 }
 
 .footer .container {
-    padding: 45px 0 95px;
+    padding-top: 45px;
+    padding-bottom: 95px;
+    flex-wrap: wrap;
 }
 
 .footer__leftpart {
-    width: 30%;
+    flex: 0 1 30%;
 }
 
 .footer__rightpart {
     display: flex;
-    width: 55%;
+    flex: 0 1 50%;
 }
 
 .footer ul {
@@ -456,11 +489,58 @@ img {
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 1000px) {
+    .services__item:nth-child(odd) {
+        background: #000;
+        color: #fff;
+    }
+    .services__item:nth-child(odd) a {
+        color: #f8de01;
+    }
+    .services__item:nth-child(even) {
+        background: #f8de01;
+        color: #000;
+    }
+    .services__item:nth-child(even) a {
+        color: #000;
+    }
+    .services__container {
+        width: 100%;
+        padding: 25px 30px;
+    }
+    .newsletter__discount {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+    .newsletter__form {
+        flex: 0 0 100%;
+    }
+    .footer__leftpart {
+        flex: 0 0 100%;
+    }
+    .footer__rightpart {
+        display: flex;
+        flex: 0 0 100%;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .feature {
+        background-color: #fff;
+    }
+    .new-feature {
+        background: #ffae00;
+    }
+    .feature__img {
+        display: none;
+    }
+    .feature h2 {
+        padding-top: 0;
+    }
+    /* ---------------------------- */
     .header__nav {
         display: none;
     }
-
     .header__toggler {
         display: block;
         width: 50px;
@@ -469,9 +549,8 @@ img {
         border: 0;
         background: rgb(42, 40, 39);
         position: absolute;
-            right: 0;
+        right: 0;
     }
-
     .burger__lines,
     .burger__lines::before,
     .burger__lines::after {
@@ -480,42 +559,53 @@ img {
         background: #fff;
         position: absolute;
     }
-
     .burger__lines {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
     .burger__lines::before {
         content: '';
-            top: -10px;
-            left: 0;
+        top: -10px;
+        left: 0;
     }
-
     .burger__lines::after {
         content: '';
-            top: 10px;
-            left: 0;
+        top: 10px;
+        left: 0;
     }
-
     /* -=------------------------------------------------------ */
-
+    .main,
+    .feature,
+    .products,
+    .footer {
+        background-image: none;
+    }
     .banner__description,
     .feature__description {
         flex: 1 0 40%;
     }
-
     .banner__img {
         display: none;
     }
-
     .banner .container,
     .feature .container,
     .footer .container {
-       padding-top: 45px;
-       padding-bottom: 45px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    .services__item {
+        flex: 0 1 100%;
+    }
+    .products__item {
+        background-color: #fff;
+        flex: 0 1 48%;
+        margin-bottom: 25px;
     }
 }
 
-
+@media screen and (max-width: 550px) {
+    .products__item {
+        flex: 0 0 100%;
+    }
+}
