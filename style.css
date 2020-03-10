@@ -21,6 +21,12 @@ html {
     /* added line */
 }
 
+.no-scroll {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -547,7 +553,7 @@ img {
         height: 50px;
         border-radius: 50%;
         border: 0;
-        background: rgb(42, 40, 39);
+        background: #212121;
         position: absolute;
         right: 0;
     }
@@ -573,6 +579,25 @@ img {
         content: '';
         top: 10px;
         left: 0;
+    }
+    .header__nav.is-open {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background: #212121;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .is-open .header__item {
+        width: 100%;
+        text-align: center;
+        margin: 1.5vh;
+    }
+    .is-open a {
+        font-size: 1.8rem;
     }
     /* -=------------------------------------------------------ */
     .main,
