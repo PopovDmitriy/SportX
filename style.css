@@ -162,6 +162,37 @@ img {
     font-size: 1.25rem;
 }
 
+/* ----------style-btn---------- */
+
+.banner a {
+    position: relative;
+    transition: .2s ease-in-out;
+    overflow: hidden;
+}
+
+.banner a::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(90deg,rgba(245, 241, 16,.1),rgba(245, 241, 16,.5));
+    height: 80px;
+    width: 80px;
+    top: 0;
+    left: -115px;
+    transform: skewX(-45deg);
+}
+
+.banner a:hover {
+    background: #fe6637;
+    color: #fff;
+}
+
+.banner a:hover::before {
+    left: 250px;
+    transition: .5s ease-in-out;
+}
+
+/* -----------endstyle---------- */
+
 .banner__img,
 .feature__img {
     flex: 1 0 45%;
