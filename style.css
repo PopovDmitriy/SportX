@@ -40,7 +40,7 @@ img {
 .header {
     background: url(img/header_bg.png) no-repeat;
     background-size: 100% 100%;
-    border: 1px dotted rgb(255, 251, 2);
+    /* border: 1px dotted rgb(255, 251, 2); */
     margin: 0 auto;
     padding-left: 15%;
     padding-right: 15%;
@@ -104,6 +104,8 @@ img {
 
 .banner {
     color: #fff;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .container {
@@ -175,6 +177,10 @@ img {
     bottom: 0;
 }
 
+.banner__btn,
+.feature__btn {
+    text-align: center;
+}
 
 /* --------------------------------------------------- */
 
@@ -410,30 +416,29 @@ img {
 }
 
 .newsletter__form {
+    height: 80px;
     display: flex;
+    flex: 0 1 50%;
     padding-top: 30px;
     padding-left: 18px;
-    flex: 0 1 50%;
 }
 
 .mail {
     width: 73%;
-    height: 52px;
     background: inherit;
     border: 1px solid #fff;
     color: #fff;
-    padding-left: 10px;
+    padding: 0 10px;
     font-size: 1rem;
 }
 
 .submit {
-    width: 27%;
-    height: 54px;
     background: inherit;
     border: 1px solid #f8de01;
     color: #f8de01;
     font-size: 1.25rem;
     font-weight: 700;
+    padding: 0 25px;
 }
 
 
@@ -452,6 +457,8 @@ img {
 .footer .container {
     padding-top: 45px;
     padding-bottom: 95px;
+    padding-left: 24px;
+    padding-right: 25px;
     flex-wrap: wrap;
 }
 
@@ -531,19 +538,31 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+    
+    .banner h2,
+    .feature h2,
+    .products h2 {
+        text-align: center;
+    }
+
     .feature {
         background-color: #fff;
     }
+
     .new-feature {
         background: #ffae00;
     }
+    
     .feature__img {
         display: none;
     }
+
     .feature h2 {
         padding-top: 0;
     }
+
     /* ---------------------------- */
+
     .header__nav {
         display: none;
     }
@@ -553,8 +572,8 @@ img {
         height: 50px;
         border-radius: 50%;
         border: 0;
-        background: #212121;
-        position: absolute;
+        background: #f8de01;
+        position: relative;
         right: 0;
     }
     .burger__lines,
@@ -562,7 +581,7 @@ img {
     .burger__lines::after {
         width: 35px;
         height: 5px;
-        background: #fff;
+        background: #1c1c1c;
         position: absolute;
     }
     .burger__lines {
@@ -603,7 +622,8 @@ img {
     .main,
     .feature,
     .products,
-    .footer {
+    .footer,
+    .newsletter {
         background-image: none;
     }
     .banner__description,
@@ -615,7 +635,8 @@ img {
     }
     .banner .container,
     .feature .container,
-    .footer .container {
+    .footer .container,
+    .newsletter .container {
         padding-top: 45px;
         padding-bottom: 45px;
     }
