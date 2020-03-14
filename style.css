@@ -705,6 +705,10 @@ img {
         text-align: center;
     }
 
+    .products .container {
+        padding-top: 60px;
+    }
+
     .products p {
         padding-left: 10px;
         padding-right: 10px;
@@ -723,7 +727,11 @@ img {
     }
 
     .feature h2 {
-        padding-top: 0;
+        padding-top: 10px;
+    }
+
+    .feature__description {
+        padding-top: 20px;
     }
 
     /* ---------------------------- */
@@ -861,10 +869,6 @@ img {
     .feature h2,
     .products h2 {
         font-size: 1.9rem;
-    }
-
-    .products .container {
-        padding-top: 60px;
     }
 
     .products__item {
