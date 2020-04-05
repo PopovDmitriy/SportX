@@ -38,7 +38,7 @@ img {
 }
 
 .header {
-    background: url(img/header_bg.webp) no-repeat;
+    background: url(img/header_bg.png) no-repeat;
     background-size: 100% 100%;
     /* border: 1px dotted rgb(255, 251, 2); */
     margin: 0 auto;
@@ -107,7 +107,7 @@ img {
 .newsletter,
 .footer {
     margin: 0 auto;
-    background: #1c1c1c url(img/main_bg.webp) no-repeat;
+    background: #1c1c1c url(img/main_bg.png) no-repeat;
     background-size: 100% 100%;
 }
 
@@ -249,27 +249,27 @@ img {
 }
 
 .services__item:nth-child(1) {
-    background: #1c1c1c url(img/first-item.webp) no-repeat;
+    background: #1c1c1c url(img/first-item.png) no-repeat;
     background-size: cover;
     background-position: center right;
 }
 
 .services__item:nth-child(2) {
-    background: #1c1c1c url(img/second-item.webp) no-repeat;
+    background: #1c1c1c url(img/second-item.png) no-repeat;
     background-size: cover;
     background-position: center right;
     color: #000;
 }
 
 .services__item:nth-child(3) {
-    background: #1c1c1c url(img/third-item.webp) no-repeat;
+    background: #1c1c1c url(img/third-item.png) no-repeat;
     background-size: cover;
     background-position: center right;
     color: #000;
 }
 
 .services__item:nth-child(4) {
-    background: #1c1c1c url(img/fourth-item.webp) no-repeat;
+    background: #1c1c1c url(img/fourth-item.png) no-repeat;
     background-size: cover;
     background-position: center right;
 }
@@ -389,7 +389,7 @@ img {
 /* ------------------------------------ */
 
 .feature {
-    background: url(img/bg1.webp) no-repeat;
+    background: url(img/bg1.png) no-repeat;
     background-size: 100% 100%;
 }
 
@@ -477,7 +477,7 @@ img {
 }
 
 .new-feature {
-    background: url(img/bg2.webp) no-repeat;
+    background: url(img/bg2.png) no-repeat;
     background-size: 100% 100%;
 }
 
@@ -500,7 +500,7 @@ img {
 /* ----------------------------------------- */
 
 .newsletter {
-    background: url(img/bg3.webp) no-repeat;
+    background: url(img/bg3.png) no-repeat;
     background-size: 100% 100%;
     color: #fff;
 }
