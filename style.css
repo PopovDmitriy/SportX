@@ -616,9 +616,7 @@ img {
     width: 100%;
     background: #212121;
     text-align: center;
-    padding-top: 30px;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding: 15px 25px;
     font-size: 1rem;
 }
 
@@ -658,12 +656,19 @@ img {
 
     .newsletter__discount {
         flex: 0 0 100%;
-        text-align: center;
     }
 
     .newsletter__form {
         flex: 0 0 100%;
         padding-left: 0;
+    }
+
+    .newsletter__form .mail {
+        width: 80%;
+    }
+
+    .newsletter__form .submit {
+        width: 20%;
     }
 
     .footer__leftpart {
@@ -690,8 +695,8 @@ img {
 @media screen and (max-width: 768px) {
     
     .header__container {
-        padding-top: 15px;
-        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .banner h2,
@@ -854,8 +859,13 @@ img {
         padding-bottom: 45px;
     }
 
+    .services {
+        padding-top: 20px;
+    }
+
     .services__item {
         flex: 0 1 100%;
+        padding: 10px 20px;
     }
 
     .products__item {
@@ -863,9 +873,18 @@ img {
         flex: 0 1 48%;
         margin-bottom: 25px;
     }
+
+    .newsletter__form .submit {
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 550px) {
+
+    .services__item {
+        padding: 0;
+    }
+
     .feature h2,
     .products h2 {
         font-size: 1.9rem;
@@ -879,6 +898,10 @@ img {
         padding-top: 20px;
     }
 
+    .newsletter__discount {
+        line-height: 2.5rem;
+    }
+
     .mail {
         flex: 0 1 100%;
         padding-top: 10px;
@@ -887,6 +910,7 @@ img {
 
     .newsletter__form {
         flex-wrap: wrap;
+        margin-bottom: 20px;
     }
 
     .submit {
@@ -898,6 +922,11 @@ img {
 
     .footer__rightpart ul {
         flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .footer__rightpart .dropdown {
+        padding-right: 0;
     }
 
     .dropdown {
